@@ -1,0 +1,24 @@
+<!-- chat.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Grupo 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let message of messages" class="message">
+    {{ message }}
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-input [(ngModel)]="newMessage" placeholder="Escribe un mensaje..."></ion-input>
+    <ion-button (click)="sendMessage()">Enviar</ion-button>
+  </ion-toolbar>
+</ion-footer>
+
+
+
+
